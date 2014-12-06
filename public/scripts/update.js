@@ -28,7 +28,7 @@ var update = {
 
 
     soundPlay: function(){
-    	document.getElementById("myAudio").play();
+    	document.getElementById("cityTwoAudio").play();
     }
 
 
