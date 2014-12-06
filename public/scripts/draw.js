@@ -4,7 +4,7 @@ var draw = {
 
 
 	draw: function() {
-		//console.log(draw.logMessage);
+		console.log(draw.logMessage);
 		//window.alert(draw.logMessage);
 
 	}

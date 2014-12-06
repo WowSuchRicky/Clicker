@@ -4,7 +4,7 @@ var update = {
 
 
 	update: function() {
-		//console.log(update.logMessage + (new Date).getTime());
+		console.log(update.logMessage);
 		//window.alert(update.logMessage);
 
 	}
