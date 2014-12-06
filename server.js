@@ -10,6 +10,6 @@ var express = require('express'),
     io = require('socket.io').listen(server);
 
 app.use(express.static(__dirname + "/public"));
-app.all('/*', function(req, res) {
-    res.sendfile('public/index.html');
-});
+app.get('/', function (req, res) {
+    res.sendfile(__dirname + '/public/index.html')
+})
