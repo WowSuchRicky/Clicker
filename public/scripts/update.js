@@ -24,5 +24,12 @@ var update = {
     		return true;
     	}
     	return false;
+    },
+
+
+    soundPlay: function(){
+    	document.getElementById("myAudio").play();
     }
+
+
 }

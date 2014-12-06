@@ -7,6 +7,9 @@
 <img src="images/map.jpg" usemap="#Map"/>
 <map name="Map" id="Map">
     <area alt="" onclick="main.euphoria();" title="" href="#" shape="rect" coords="315,207,327,217" />
+
+
+    <area alt="" onclick="update.soundPlay();" title="" href="#" shape="poly" coords="89,140,90,160,113,161,111,140" />
     <br/>
     <div id="doritosCounter">Doritos: 0</div>
     <div id="mountainDewCounter">Mountain Dew: 0</div>
@@ -19,7 +22,7 @@
 
 
 
-<audio id="myAudio" controls>
+<audio id="myAudio" >
   <source src="sounds/xfilesthemememe.ogg" type="audio/ogg">
   <source src="sounds/xfilesthemememe.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
@@ -28,15 +31,10 @@
 
 
 
+
 <script src="scripts/update.js"></script>
 <script src="scripts/draw.js"></script>
 <script src="scripts/loop.js"></script>
 <script src="scripts/main.js"></script>
-
-<script>
-    // for(var i = 0; i < 999; i++){
-    // document.getElementById("counter").innerHTML = "Counter: " + i;
-    // }
-</script>
 
 </html>
