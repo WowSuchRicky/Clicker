@@ -1,4 +1,3 @@
-
 var loop = {
 
 	logMessage: "In the loop function: ",
