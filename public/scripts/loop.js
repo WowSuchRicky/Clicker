@@ -31,8 +31,6 @@ var loop = {
 
 
 
-
-
 }
 
 // Start the game loop

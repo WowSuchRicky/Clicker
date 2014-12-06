@@ -7,6 +7,8 @@
 <img src="images/map.jpg" usemap="#Map"/>
 <map name="Map" id="Map">
     <area alt="" onclick="alert('Hello Leo');" title="" href="#" shape="rect" coords="315,207,327,217" />
+    <br/>
+    <div id="counter">Counter: 0</div>
 </map>
 
 </body>
@@ -15,5 +17,12 @@
 <script src="scripts/draw.js"></script>
 <script src="scripts/loop.js"></script>
 <script src="scripts/main.js"></script>
+
+<script>
+    for(var i = 0; i < 999; i++){
+    document.getElementById("counter").innerHTML = "Counter: " + i;
+    }
+
+</script>
 
 </html>
