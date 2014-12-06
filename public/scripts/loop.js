@@ -2,7 +2,7 @@
 var loop = {
 
 	logMessage: "In the loop function: ",
-
+	framesInSecond: 0,
 
 
 	//consider refactoring to something that limits draw calls to not kill cpu. 
@@ -22,11 +22,14 @@ var loop = {
 //	}
 
     loop: function(){
-        update.update();
+
+    	update.update();
         draw.draw();
 
         requestAnimationFrame(loop.loop)
-    }
+    },
+
+
 
 
 
