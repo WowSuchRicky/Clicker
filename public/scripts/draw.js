@@ -9,6 +9,6 @@ var draw = {
 
 		document.getElementById("doritosCounter").innerHTML = "Doritos: " + update.doritos;
 		document.getElementById("mountainDewCounter").innerHTML = "Mountain Dew: " + update.mountainDew;
-
+		document.getElementById("upgradeCounter").innerHTML = "Upgrades: " + update.upgrades;
 	}
 }

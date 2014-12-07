@@ -1,6 +1,6 @@
 var update = {
 
-	doritos: 0, mountainDew: 0, doritosRate: 1, mountainDewRate: 1, logMessage: "In the update function", 
+	doritos: 0, mountainDew: 0, doritosRate: 1, mountainDewRate: 1, logMessage: "In the update function", upgrades: 0,
 	buildings: [
 		{level: 1, doritosCost: (Math.random() * 5 + 0),  mountainDewCost: (Math.random() * 5 + 10)}, 
 		{level: 1, doritosCost: (Math.random() * 5 + 1),  mountainDewCost: (Math.random() * 5 + 9)}, 
@@ -46,77 +46,133 @@ var update = {
 
     city: function(citynum){
     	//don't need a switch but it is a game jam, after all le lenny
-        switch(citynum){
-            case 1:
-            	if(update.doritos >= update.buildings[citynum-1].doritosCost && update.mountainDew >= update.buildings[citynum-1].mountainDewCost){
-            		update.levelBuilding(citynum-1);
-            		document.getElementById("cityOneAudio").play();
-            	}
-                break;
-            case 2:
-                if(update.doritos >= update.buildings[citynum-1].doritosCost && update.mountainDew >= update.buildings[citynum-1].mountainDewCost){
-            		update.levelBuilding(citynum-1);
-            		document.getElementById("cityTwoAudio").play();
-            	}
-                break;
-            case 3:
-                if(update.doritos >= update.buildings[citynum-1].doritosCost && update.mountainDew >= update.buildings[citynum-1].mountainDewCost){
-            		update.levelBuilding(citynum-1);
-            		document.getElementById("cityThreeAudio").play();
-            	}
-                break;
-            case 4:
-                if(update.doritos >= update.buildings[citynum-1].doritosCost && update.mountainDew >= update.buildings[citynum-1].mountainDewCost){
-            		update.levelBuilding(citynum-1);
-            		document.getElementById("cityFourAudio").play();
-            	}
-                break;
-            case 5:
-                if(update.doritos >= update.buildings[citynum-1].doritosCost && update.mountainDew >= update.buildings[citynum-1].mountainDewCost){
-            		update.levelBuilding(citynum-1);
-            		document.getElementById("cityFiveAudio").play();
-            	}
-                break;
-            case 6:
-                if(update.doritos >= update.buildings[citynum-1].doritosCost && update.mountainDew >= update.buildings[citynum-1].mountainDewCost){
-            		update.levelBuilding(citynum-1);
-            		document.getElementById("citySixAudio").play();
-            	}
-                break;
-            case 7:
-                if(update.doritos >= update.buildings[citynum-1].doritosCost && update.mountainDew >= update.buildings[citynum-1].mountainDewCost){
-            		update.levelBuilding(citynum-1);
-            		document.getElementById("citySevenAudio").play();
-            	}
-                break;
-            case 8:
-                if(update.doritos >= update.buildings[citynum-1].doritosCost && update.mountainDew >= update.buildings[citynum-1].mountainDewCost){
-            		update.levelBuilding(citynum-1);
-            		document.getElementById("cityEightAudio").play();
-            	}
-                break;
-            case 9:
-                if(update.doritos >= update.buildings[citynum-1].doritosCost && update.mountainDew >= update.buildings[citynum-1].mountainDewCost){
-            		update.levelBuilding(citynum-1);
-            		document.getElementById("cityNineAudio").play();
-            	}
-                break;
-            case 10:
-                if(update.doritos >= update.buildings[citynum-1].doritosCost && update.mountainDew >= update.buildings[citynum-1].mountainDewCost){
-            		update.levelBuilding(citynum-1);
-            		document.getElementById("cityTenAudio").play();
-            	}
-                break;
-            case 11:
-                if(update.doritos >= update.buildings[citynum-1].doritosCost && update.mountainDew >= update.buildings[citynum-1].mountainDewCost){
-            		update.levelBuilding(citynum-1);
-            		document.getElementById("cityElevenAudio").play();
-            	}
-                break;
-            default:
-                break;
-        }
+        // if(update.doritos >= update.buildings[citynum-1].doritosCost && update.mountainDew >= update.buildings[citynum-1].mountainDewCost){
+        //     update.levelBuilding(citynum-1);
+        // }
 
+            switch(citynum){
+                case 1:
+                	if(update.doritos >= update.buildings[citynum-1].doritosCost && update.mountainDew >= update.buildings[citynum-1].mountainDewCost){
+                		update.levelBuilding(citynum-1);
+                        if(update.upgrades % 3 == 0){
+                            document.getElementById("ohBabyATripleAudio").play();
+                        }else{
+                            document.getElementById("cityOneAudio").play();
+                        }
+                	}
+                    break;
+                case 2:
+                    if(update.doritos >= update.buildings[citynum-1].doritosCost && update.mountainDew >= update.buildings[citynum-1].mountainDewCost){
+                		update.levelBuilding(citynum-1);
+                        if(update.upgrades % 3 == 0){
+                            document.getElementById("ohBabyATripleAudio").play();
+                        }else{
+                            document.getElementById("cityTwoAudio").play();
+                        }
+                	}
+                    break;
+                case 3:
+                    if(update.doritos >= update.buildings[citynum-1].doritosCost && update.mountainDew >= update.buildings[citynum-1].mountainDewCost){
+                		update.levelBuilding(citynum-1);
+                        if(update.upgrades % 3 == 0){
+                            document.getElementById("ohBabyATripleAudio").play();
+                        }else{
+                            document.getElementById("cityThreeAudio").play();
+                        }
+                	}
+                    break;
+                case 4:
+                    if(update.doritos >= update.buildings[citynum-1].doritosCost && update.mountainDew >= update.buildings[citynum-1].mountainDewCost){
+                		update.levelBuilding(citynum-1);
+                        if(update.upgrades % 3 == 0){
+                            document.getElementById("ohBabyATripleAudio").play();
+                        }else{
+                            document.getElementById("cityFourAudio").play();
+                        }
+                		
+                	}
+                    break;
+                case 5:
+                    if(update.doritos >= update.buildings[citynum-1].doritosCost && update.mountainDew >= update.buildings[citynum-1].mountainDewCost){
+                		update.levelBuilding(citynum-1);
+                        if(update.upgrades % 3 == 0){
+                            document.getElementById("ohBabyATripleAudio").play();
+                        }else{
+                            document.getElementById("cityFiveAudio").play();
+                        }
+                		
+                	}
+                    break;
+                case 6:
+                    if(update.doritos >= update.buildings[citynum-1].doritosCost && update.mountainDew >= update.buildings[citynum-1].mountainDewCost){
+                		update.levelBuilding(citynum-1);
+                        if(update.upgrades % 3 == 0){
+                            document.getElementById("ohBabyATripleAudio").play();
+                        }else{
+                            document.getElementById("citySixAudio").play();
+                        }
+                		
+                	}
+                    break;
+                case 7:
+                    if(update.doritos >= update.buildings[citynum-1].doritosCost && update.mountainDew >= update.buildings[citynum-1].mountainDewCost){
+                		update.levelBuilding(citynum-1);
+                        if(update.upgrades % 3 == 0){
+                            document.getElementById("ohBabyATripleAudio").play();
+                        }else{
+                            document.getElementById("citySevenAudio").play();
+                        }
+                		
+                	}
+                    break;
+                case 8:
+                    if(update.doritos >= update.buildings[citynum-1].doritosCost && update.mountainDew >= update.buildings[citynum-1].mountainDewCost){
+                		update.levelBuilding(citynum-1);
+                        if(update.upgrades % 3 == 0){
+                            document.getElementById("ohBabyATripleAudio").play();
+                        }else{
+                            document.getElementById("cityEightAudio").play();
+                        }
+                		
+                	}
+                    break;
+                case 9:
+                    if(update.doritos >= update.buildings[citynum-1].doritosCost && update.mountainDew >= update.buildings[citynum-1].mountainDewCost){
+                		update.levelBuilding(citynum-1);
+                        if(update.upgrades % 3 == 0){
+                            document.getElementById("ohBabyATripleAudio").play();
+                        }else{
+                            document.getElementById("cityNineAudio").play();
+                        }
+                		
+                	}
+                    break;
+                case 10:
+                    if(update.doritos >= update.buildings[citynum-1].doritosCost && update.mountainDew >= update.buildings[citynum-1].mountainDewCost){
+                		update.levelBuilding(citynum-1);
+                        if(update.upgrades % 3 == 0){
+                            document.getElementById("ohBabyATripleAudio").play();
+                        }else{
+                            document.getElementById("cityTenAudio").play();
+                        }
+                		
+                	}
+                    break;
+                case 11:
+                    if(update.doritos >= update.buildings[citynum-1].doritosCost && update.mountainDew >= update.buildings[citynum-1].mountainDewCost){
+                		update.levelBuilding(citynum-1);
+                        if(update.upgrades % 3 == 0){
+                            document.getElementById("ohBabyATripleAudio").play();
+                        }else{
+                            document.getElementById("cityElevenAudio").play();
+                        }
+                		
+                	}
+                    break;
+                default:
+                    break;
+            }
+        
     },
 
     levelBuilding: function(citynum) {
@@ -127,6 +183,7 @@ var update = {
     	update.buildings[citynum].mountainDewCost += ((Math.random() * (5 + update.buildings[citynum].level)) + (citynum + 10)% 11);
     	update.mountainDewRate++;
         update.doritosRate++;
+        update.upgrades++;
     }
 
 
