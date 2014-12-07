@@ -1,88 +1,93 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Clicker Game</title>
-</head>
-<body>
-<img src="images/map.jpg" usemap="#Map"/>
-<map name="Map" id="Map">
-    <area alt="" onclick="update.city(1);" title="" href="#" shape="rect" coords="201,435,220,455" /> <!-- city one-->
-    <area alt="" onclick="update.city(2);" title="" href="#" shape="rect" coords="91,142,108,163" /> <!--city two-->
-    <area alt="" onclick="update.city(3);" title="" href="#" shape="rect" coords="318,0,340,20" /> <!--city three-->
-    <area alt="" onclick="update.city(4);" title="" href="#" shape="rect" coords="530,122,548,142" /> <!--city four-->
-    <area alt="" onclick="update.city(5);" title="" href="#" shape="rect" coords="462,435,482,455" /> <!--city five-->
-    <area alt="" onclick="update.city(6);" title="" href="#" shape="rect" coords="317,320,336,340" /> <!--city six-->
-    <area alt="" onclick="update.city(7);" title="" href="#" shape="rect" coords="238,259,256,279" /> <!--city seven-->
-    <area alt="" onclick="update.city(8);" title="" href="#" shape="rect" coords="280,112,299,132" /> <!--city eight-->
-    <area alt="" onclick="update.city(9);" title="" href="#" shape="rect" coords="366,108,384,128" /> <!--city nine-->
-    <area alt="" onclick="update.city(10);" title="" href="#" shape="rect" coords="407,233,426,253" /> <!--city ten-->
-    <area alt="" onclick="update.city(11);" title="" href="#" shape="rect" coords="315,207,327,227" /> <!--city center | city eleven-->
-    <br/>
-    <div id="doritosCounter">Doritos: 0</div>
-    <div id="mountainDewCounter">Mountain Dew: 0</div>
-</map>
+	<head>
+	    <title>Clicker Game</title>
+	</head>
+	<body>
+		<div id="doritosCounter">Doritos: 0</div>
+		<div id="mountainDewCounter">Mountain Dew: 0</div>
+		
+		<img src="images/map.jpg" usemap="#Map"/>
+		<map name="Map" id="Map">
+		    <area alt="" onclick="update.city(1);" title="" href="#" shape="rect" coords="201,435,220,455" /> <!-- city one-->
+		    <area alt="" onclick="update.city(2);" title="" href="#" shape="rect" coords="91,142,108,163" /> <!--city two-->
+		    <area alt="" onclick="update.city(3);" title="" href="#" shape="rect" coords="318,0,340,20" /> <!--city three-->
+		    <area alt="" onclick="update.city(4);" title="" href="#" shape="rect" coords="530,122,548,142" /> <!--city four-->
+		    <area alt="" onclick="update.city(5);" title="" href="#" shape="rect" coords="462,435,482,455" /> <!--city five-->
+		    <area alt="" onclick="update.city(6);" title="" href="#" shape="rect" coords="317,320,336,340" /> <!--city six-->
+		    <area alt="" onclick="update.city(7);" title="" href="#" shape="rect" coords="238,259,256,279" /> <!--city seven-->
+		    <area alt="" onclick="update.city(8);" title="" href="#" shape="rect" coords="280,112,299,132" /> <!--city eight-->
+		    <area alt="" onclick="update.city(9);" title="" href="#" shape="rect" coords="366,108,384,128" /> <!--city nine-->
+		    <area alt="" onclick="update.city(10);" title="" href="#" shape="rect" coords="407,233,426,253" /> <!--city ten-->
+		    <area alt="" onclick="update.city(11);" title="" href="#" shape="rect" coords="315,207,327,227" /> <!--city center | city eleven-->
+		</map>
+	</body>
 
-</body>
+	<audio id="cityOneAudio" >
+	  <source src="sounds/xfilesthemememe.ogg" type="audio/ogg">
+	  <source src="sounds/xfilesthemememe.mp3" type="audio/mpeg">
+	  Your browser does not support the audio element.
+	</audio>
+	<audio id="cityTwoAudio" >
+	  <source src="sounds/DamnSon.ogg" type="audio/ogg">
+	  <source src="sounds/DamnSon.mp3" type="audio/mpeg">
+	  Your browser does not support the audio element.
+	</audio>
+	<audio id="cityThreeAudio" >
+	  <source src="sounds/fuck.ogg" type="audio/ogg">
+	  <source src="sounds/fuck.mp3" type="audio/mpeg">
+	  Your browser does not support the audio element.
+	</audio>
+	<audio id="cityFourAudio" >
+	  <source src="sounds/HITMARKER.ogg" type="audio/ogg">
+	  <source src="sounds/HITMARKER.mp3" type="audio/mpeg">
+	  Your browser does not support the audio element.
+	</audio>
+	<audio id="cityFiveAudio" >
+	  <source src="sounds/OhYea.ogg" type="audio/ogg">
+	  <source src="sounds/OhYea.mp3" type="audio/mpeg">
+	  Your browser does not support the audio element.
+	</audio>
+	<audio id="citySixAudio" >
+	  <source src="sounds/2sad4me.ogg" type="audio/ogg">
+	  <source src="sounds/2sad4me.mp3" type="audio/mpeg">
+	  Your browser does not support the audio element.
+	</audio>
+	<audio id="citySevenAudio" >
+	  <source src="sounds/DamnSonWow.ogg" type="audio/ogg">
+	  <source src="sounds/DamnSonWow.mp3" type="audio/mpeg">
+	  Your browser does not support the audio element.
+	</audio>
+	<audio id="cityEightAudio" >
+	  <source src="sounds/DedotadedWam.ogg" type="audio/ogg">
+	  <source src="sounds/DedotadedWam.mp3" type="audio/mpeg">
+	  Your browser does not support the audio element.
+	</audio>
+	<audio id="cityNineAudio" >
+	  <source src="sounds/SmokeWeedEveryday.ogg" type="audio/ogg">
+	  <source src="sounds/SmokeWeedEveryday.mp3" type="audio/mpeg">
+	  Your browser does not support the audio element.
+	</audio>
+	<audio id="cityTenAudio" >
+	  <source src="sounds/Sanic.ogg" type="audio/ogg">
+	  <source src="sounds/Sanic.mp3" type="audio/mpeg">
+	  Your browser does not support the audio element.
+	</audio>
+	<audio id="cityElevenAudio" >
+	  <source src="sounds/MomGetTheCamera.ogg" type="audio/ogg">
+	  <source src="sounds/MomGetTheCamera.mp3" type="audio/mpeg">
+	  Your browser does not support the audio element.
+	</audio>
 
-<audio id="cityOneAudio" >
-  <source src="sounds/xfilesthemememe.ogg" type="audio/ogg">
-  <source src="sounds/xfilesthemememe.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-<audio id="cityTwoAudio" >
-  <source src="sounds/DamnSon.ogg" type="audio/ogg">
-  <source src="sounds/DamnSon.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-<audio id="cityThreeAudio" >
-  <source src="sounds/fuck.ogg" type="audio/ogg">
-  <source src="sounds/fuck.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-<audio id="cityFourAudio" >
-  <source src="sounds/HITMARKER.ogg" type="audio/ogg">
-  <source src="sounds/HITMARKER.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-<audio id="cityFiveAudio" >
-  <source src="sounds/OhYea.ogg" type="audio/ogg">
-  <source src="sounds/OhYea.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-<audio id="citySixAudio" >
-  <source src="sounds/2sad4me.ogg" type="audio/ogg">
-  <source src="sounds/2sad4me.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-<audio id="citySevenAudio" >
-  <source src="sounds/DamnSonWow.ogg" type="audio/ogg">
-  <source src="sounds/DamnSonWow.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-<audio id="cityEightAudio" >
-  <source src="sounds/DedotadedWam.ogg" type="audio/ogg">
-  <source src="sounds/DedotadedWam.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-<audio id="cityNineAudio" >
-  <source src="sounds/SmokeWeedEveryday.ogg" type="audio/ogg">
-  <source src="sounds/SmokeWeedEveryday.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-<audio id="cityTenAudio" >
-  <source src="sounds/Sanic.ogg" type="audio/ogg">
-  <source src="sounds/Sanic.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-<audio id="cityElevenAudio" >
-  <source src="sounds/MomGetTheCamera.ogg" type="audio/ogg">
-  <source src="sounds/MomGetTheCamera.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
+	<audio id="ohBabyATripleAudio" >
+	  <source src="sounds/OhBabyATriple.ogg" type="audio/ogg">
+	  <source src="sounds/OhBabyATriple.mp3" type="audio/mpeg">
+	  Your browser does not support the audio element.
+	</audio>
 
-<script src="scripts/update.js"></script>
-<script src="scripts/draw.js"></script>
-<script src="scripts/loop.js"></script>
-<script src="scripts/main.js"></script>
+	<script src="scripts/update.js"></script>
+	<script src="scripts/draw.js"></script>
+	<script src="scripts/loop.js"></script>
+	<script src="scripts/main.js"></script>
 
 </html>
